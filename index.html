@@ -5,51 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Festival do Panda 2020</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="/index.html">Galeria</a>
-        <a href="/index.html">Metas Atingidas</a>
-        <a href="/index.html">Próximo Festival</a>
-        <a href="/index.html">Faq's</a>
-        <Logo><img src="Images/Panda_logo.png"></Logo></nav>
-
+        <nav role="navigation">
+                <div id="menuToggle">
+                  <!--
+                  A fake / hidden checkbox is used as click reciever,
+                  so you can use the :checked selector on it.
+                  -->
+                  <input type="checkbox" />
+                  
+                  <!--
+                  Some spans to act as a hamburger.
+                  
+                  They are acting like a real hamburger,
+                  not that McDonalds stuff.
+                  -->
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  <!--
+                  Too bad the menu has to be inside of the button
+                  but hey, it's pure CSS magic.
+                  -->
+                  <ul id="menu">
+                    <a href="#"><li>Galeria</li></a>
+                    <a href="#"><li>Metas Atingidas</li></a>
+                    <a href="#"><li>Próximo Festival</li></a>
+                    <a href="#"><li>Faq's</li></a>
+                  </ul>
+                </div>
+                <div class="logo"><img src="Images/Panda_logo.png"></div>
+              </nav>
+              <section>
         <H1>Galeria</H1>
-        <img src="Images/Panda LX.jpg" width="100px">
+        <div class="scroll-horizontal">
+        <div class="card">
+        <img src="Images/Panda LX.jpg">
         <p>Lisboa 2018</p>
-        <img src="Images/Panda leiria.png" width="100px">
+    </div>
+    <div class="card">
+        <img src="/Images/Panda leiria.png">
         <p>Leiria 2017</p>
-        <img src="Images/Panda crianças.jpeg" width="100px">
-        <p></p>Aveiro 2016</p>
-        <img src="Images/Multidão F PAnda.jpg" width="100px">
+    </div>
+    <div class="card">
+        <img src="Images/Multidão F PAnda.jpg">
+        <p>Aveiro 2016</p>
+    </div>
+    <div>
+    <img src="/Images/Panda braga.jpg" alt="">
         <p>Porto 2015</p>
-        <img src="Images/Panda braga.jpg" width="100px">
-        <p>Braga 2014</p>
+    </div>
+    <div class="card">
+        <img src="/Images/Panda crianças.jpeg">
+        <p>Braga 2014</p></div>
+    </div>
         <H1>Metas Atingidas</H1>
-        <img src="Images/jonathan-chng-OTDyDgPoJ_0-unsplash.jpg" width="100px">
-        <p>Plástico</p>
-        <img src="Images/lacey-williams-Jwh_k0K_QOM-unsplash.jpg" width="100px">
-        <p>Vidro</p>
-        <img src="Images/chuttersnap-fyaTq-fIlro-unsplash.jpg" width="100px">
-        <p>Cartão / Papel</p>
-        <img src="Images/anna-samoylova-w55SpMmoPgE-unsplash.jpg" width="100px">
-        <p>Crianças</p>
-        <img src="Images/mike-scheid-0iqkntLw93A-unsplash.jpg" width="100px">
-        <p>Adultos</p>
+        <div class="scroll-horizontal">
+            <div>
+        <img src="Images/jonathan-chng-OTDyDgPoJ_0-unsplash.jpg">
+        <p>Plástico</p></div>
+        <div>
+        <img src="Images/lacey-williams-Jwh_k0K_QOM-unsplash.jpg">
+        <p>Vidro</p></div>
+        <div>
+        <img src="Images/anna-samoylova-w55SpMmoPgE-unsplash.jpg">
+        <p>Cartão / Papel</p></div>
+        <div>
+        <img src="Images/chuttersnap-fyaTq-fIlro-unsplash.jpg">
+        <p>Crianças</p></div>
+        <div>
+        <img src="Images/mike-scheid-0iqkntLw93A-unsplash.jpg">
+        <p>Adultos</p></div>
+    </div>
         <H1>Próximo Festival</H1>
-        <img src="Images/Map card.png" width="100px">
-        <Footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.3368102612762!2d-8.432682485269538!3d41.56195457924857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24fefa9ba2a985%3A0xa13e08a4cb7d4b46!2sEst%C3%A1dio+Municipal+de+Braga!5e0!3m2!1spt-PT!2spt!4v1562320621243!5m2!1spt-PT!2spt" frameborder="0" style="border:0" allowfullscreen class="gmap"></iframe>
+
+        <footer>
+            <div class="footer-sponsors">
                 <img src="Images/tinybeans-social.png" width="100px">
                 <img src="Images/Hollywood image.png" width="100px">
                 <img src="Images/Biggs_logo.png" width="100px">
+            </div>
         <a href="index.html"><h2>História do Festival</h2></a>
         <a href="index.html"><h2>Sobre Nós</h2></a>
-    </Footer>
-
-
-
-
-    </nav>
-    <nav></nav>
+    </footer>
+</section>
 </body>
 </html>
